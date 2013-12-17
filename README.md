@@ -6,17 +6,17 @@ Linux deploy agent for asimov
 Todo List:
 ==================
 
-
 Design language - perl
 
 modules used: 
-     -HTTP::Server::Simple::CGI
-     -HTTP::Server::Simple::Static
-     -LWP
-     -JSON::Parse
-     -Digest::MD5
-     -Sys::Hostname
+- HTTP::Server::Simple::CGI
+- HTTP::Server::Simple::Static
+- LWP
+- JSON::Parse
+- Digest::MD5
+- Sys::Hostname
 
+create perl modules:
 - http server
 - apiKey generator
 - json generator based on the config file
@@ -28,7 +28,9 @@ modules used:
 - deploy module
 - deploy log module
 - log module
-- agent init script
--service configuration module 
--module to push/pull code revision
--install script
+- service configuration module 
+- module to push/pull code revision
+
+system modules:
+- agent init script as a service (/etc/init.d)
+- install script
